@@ -1,0 +1,458 @@
+ [
+  {
+    "id": "wake",
+    "name": "Mr. Wake",
+    "department": "English",
+    "gender": "Male",
+    "hallway": "B - Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "mulligan",
+    "name": "Mrs. Mulligan",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "A - Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "safko",
+    "name": "Mr. Safko",
+    "department": "Elective",
+    "gender": "Male",
+    "hallway": "B - Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "trefz",
+    "name": "Mr. Trefz",
+    "department": "Science",
+    "gender": "Male",
+    "hallway": "J - Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "wright",
+    "name": "Mr. Wright",
+    "department": "Science",
+    "gender": "Male",
+    "hallway": "M-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "bracy",
+    "name": "Mrs. Bracy",
+    "department": "English",
+    "gender": "Female",
+    "hallway": "M-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "kirbensade",
+    "name": "Mr. (Kirby) Kirbensade",
+    "department": "Elective",
+    "gender": "Male",
+    "hallway": "A - Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "alexander",
+    "name": "Mrs. Alexander",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "azuma",
+    "name": "Mrs. Azuma",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "bates",
+    "name": "Mrs. Bates",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "arnett",
+    "name": "Mr. Arnett",
+    "department": "Phys Ed",
+    "gender": "Male",
+    "hallway": "GYM",
+    "lastName": "A-H"
+  },
+  {
+    "id": "benson",
+    "name": "Mr. Benson",
+    "department": "Security",
+    "gender": "Male",
+    "hallway": "NONE",
+    "lastName": "A-H"
+  },
+  {
+    "id": "bobo",
+    "name": "Mr. Bobo",
+    "department": "Math",
+    "gender": "Male",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "calabria",
+    "name": "Mr. Calabria",
+    "department": "Elective",
+    "gender": "Male",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "chase",
+    "name": "Mrs. Chase",
+    "department": "English",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "collins",
+    "name": "Mr. Collins",
+    "department": "Phys Ed",
+    "gender": "Male",
+    "hallway": "GYM",
+    "lastName": "A-H"
+  },
+  {
+    "id": "connor",
+    "name": "Mrs. Connor",
+    "department": "History",
+    "gender": "Female",
+    "hallway": "F-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "custis",
+    "name": "Mr. Custis",
+    "department": "Phys Ed",
+    "gender": "Male",
+    "hallway": "GYM",
+    "lastName": "A-H"
+  },
+  {
+    "id": "duca",
+    "name": "Mrs. Duca",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "feighery",
+    "name": "Mrs. Feighery",
+    "department": "History",
+    "gender": "Female",
+    "hallway": "F-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "garland",
+    "name": "Mrs. Garland",
+    "department": "Phys Ed",
+    "gender": "Female",
+    "hallway": "GYM",
+    "lastName": "A-H"
+  },
+  {
+    "id": "gomez",
+    "name": "Mrs. Gomez",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "delbuno",
+    "name": "Mrs. Del Buno",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "J-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "guzman",
+    "name": "Mr. Guzman",
+    "department": "Math",
+    "gender": "Male",
+    "hallway": "B-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "hanford",
+    "name": "Ms. Hanford",
+    "department": "Phys Ed",
+    "gender": "Female",
+    "hallway": "GYM",
+    "lastName": "A-H"
+  },
+  {
+    "id": "heffner",
+    "name": "Mrs. Heffner",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "A-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "hoffman",
+    "name": "Mrs. Hoffman",
+    "department": "Math",
+    "gender": "Female",
+    "hallway": "J-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "hegeman",
+    "name": "Mrs. Hegeman",
+    "department": "Science",
+    "gender": "Female",
+    "hallway": "J-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "ingram",
+    "name": "Mr. Ingram",
+    "department": "Elective",
+    "gender": "Male",
+    "hallway": "J-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "jarvela",
+    "name": "Mr. Jarvela",
+    "department": "Elective",
+    "gender": "Male",
+    "hallway": "A-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "jenifer",
+    "name": "Mrs. Jenifer",
+    "department": "Math",
+    "gender": "Female",
+    "hallway": "D-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "jenkins",
+    "name": "Mr. Jenkins",
+    "department": "Elective",
+    "gender": "Male",
+    "hallway": "H-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "langhorne",
+    "name": "Mr. Langhorne",
+    "department": "Science",
+    "gender": "Male",
+    "hallway": "B-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "mack",
+    "name": "Mrs. Mack",
+    "department": "English",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "marchesani",
+    "name": "Mrs. Marchesani",
+    "department": "Math",
+    "gender": "Female",
+    "hallway": "D-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "mathis",
+    "name": "Mr. Mathis",
+    "department": "History",
+    "gender": "Male",
+    "hallway": "F-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "mccord",
+    "name": "Mr. McCord",
+    "department": "Science",
+    "gender": "Male",
+    "hallway": "J-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "mulin",
+    "name": "Mrs. Mulin",
+    "department": "Science",
+    "gender": "Female",
+    "hallway": "M-Mall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "palumbo",
+    "name": "Mr. Palumbo",
+    "department": "Elective",
+    "gender": "Male",
+    "hallway": "B - Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "paparo",
+    "name": "Mrs. Paparo",
+    "department": "English",
+    "gender": "Female",
+    "hallway": "M-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "pino",
+    "name": "Mr. Pino",
+    "department": "English",
+    "gender": "Male",
+    "hallway": "M-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "rifkin",
+    "name": "Mrs. Rifkin",
+    "department": "History",
+    "gender": "Female",
+    "hallway": "F-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "montgomery",
+    "name": "Mrs. Montgomery",
+    "department": "History",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "I-Q"
+  },
+  {
+    "id": "reily",
+    "name": "Mrs. Rielly",
+    "department": "Library",
+    "gender": "Female",
+    "hallway": "Library",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "santamaria",
+    "name": "Mrs. Santamaria",
+    "department": "Elective",
+    "gender": "Female",
+    "hallway": "B-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "shaw",
+    "name": "Mrs. Shaw",
+    "department": "English",
+    "gender": "Female",
+    "hallway": "M-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "stowell",
+    "name": "Mr. Stowell",
+    "department": "Phys Ed",
+    "gender": "Male",
+    "hallway": "GYM",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "tagmire",
+    "name": "Mrs. Tagmire",
+    "department": "Science",
+    "gender": "Female",
+    "hallway": "J-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "verrecchio",
+    "name": "Mrs. Verrecchio",
+    "department": "English",
+    "gender": "Female",
+    "hallway": "M-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "voss",
+    "name": "Mr. Voss",
+    "department": "Math",
+    "gender": "Male",
+    "hallway": "D-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "wallace",
+    "name": "Mrs. Wallace",
+    "department": "Phys Ed",
+    "gender": "Female",
+    "hallway": "J-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "beard",
+    "name": "Mr. Beard",
+    "department": "Security",
+    "gender": "Male",
+    "hallway": "NONE",
+    "lastName": "A-H"
+  },
+  {
+    "id": "collins",
+    "name": "Ms. Collins",
+    "department": "Guidance",
+    "gender": "Female",
+    "hallway": "J-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "gorman",
+    "name": "Mrs. Gorman",
+    "department": "Guidance",
+    "gender": "Female",
+    "hallway": "J-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "hahn",
+    "name": "Mrs. Hahn",
+    "department": "History",
+    "gender": "Female",
+    "hallway": "F-Hall",
+    "lastName": "A-H"
+  },
+  {
+    "id": "smolark",
+    "name": "Mr. Smolark",
+    "department": "Math",
+    "gender": "Male",
+    "hallway": "D-Hall",
+    "lastName": "R-Z"
+  },
+  {
+    "id": "shaw2",
+    "name": "Mr. Shaw",
+    "department": "Elective",
+    "gender": "Male",
+    "hallway": "M-Hall",
+    "lastName": "R-Z"
+  }
+]
