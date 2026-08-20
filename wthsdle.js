@@ -55,7 +55,7 @@ if (attempts === 3 || attempts === 4) {
     profile.src = 'Images/femaleProfile.png';  
 }
 
-   department.textContent = guessedTeacher.department;
+
 
     
   if (attempts === 3 || attempts === 5) {
@@ -65,7 +65,7 @@ if (attempts === 3 || attempts === 4) {
  }
  
  const selectedId = teacherSelect.value;
-const guessedTeacher = teachers.find(t => t.id === selectedId);
+const guessedTeacher = teachers.find(t => String(t.id) === String(selectedId));
 
 if (guessedTeacher) {
   department.textContent = guessedTeacher.department;
