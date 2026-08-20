@@ -71,7 +71,7 @@ if (guessedTeacher) {
   department.textContent = guessedTeacher.department;
   gender.textContent = guessedTeacher.gender;
   hallway.textContent = guessedTeacher.hallway;
-  name.textContent = guessedTeacher.name;
+  name.textContent = guessedTeacher.lastName;
 }
 }
 
