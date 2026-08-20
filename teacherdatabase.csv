@@ -1,0 +1,58 @@
+id,name,department,gender,hallway,lastName
+wake,Mr. Wake,English,Male,B - Hall,R-Z
+mulligan,Mrs. Mulligan,Elective,Female,A - Hall,I-Q
+safko,Mr. Safko,Elective,Male,B - Hall,R-Z
+trefz,Mr. Trefz,Science,Male,J - Hall,R-Z
+wright,Mr. Wright,Science,Male,M-Hall,R-Z
+bracy,Mrs. Bracy,English,Female,M-Hall,A-H
+kirbensade,Mr. (Kirby) Kurbansade ,Elective,Male,A - Hall,I-Q
+alexander,Mrs. Alexander,Elective,Female,B-Hall,A-H
+azuma,Mrs. Azuma,Elective,Female,B-Hall,A-H
+bates,Mrs. Bates,Elective,Female,B-Hall,A-H
+arnett,Mr. Arnett,Phys Ed,Male,GYM,A-H
+benson,Mr. Benson,Security,Male,NONE,A-H
+bobo,Mr. Bobo,Math,Male,B-Hall,A-H
+calabria,Mr. Calabria,Elective,Male,B-Hall,A-H
+chase,Mrs. Chase,English,Female,B-Hall,A-H
+collins,Mr. Collins,Phys Ed,Male,GYM,A-H
+connor,Mrs. Connor,History,Female,F-Hall,A-H
+custis,Mr. Custis,Phys Ed,Male,GYM,A-H
+duca,Mrs. Duca,Elective,Female,B-Hall,A-H
+feighery,Mrs. Feighery,History,Female,F-Hall,A-H
+garland,Mrs. Garland,Phys Ed,Female,GYM,A-H
+gomez,Mrs. Gomez,Elective,Female,B-Hall,A-H
+delbuno,Mrs. Del Buno,Elective,Female,J-Hall,A-H
+guzman,Mr. Guzman,Math,Male,B-Hall,A-H
+hanford,Ms. Hanford,Phys Ed,Female,GYM,A-H
+heffner,Mrs. Heffner,Elective,Female,A-Hall,A-H
+hoffman,Mrs. Hoffman,Math,Female,J-Hall,A-H
+hegeman,Mrs. Hegeman,Science,Female,J-Hall,A-H
+ingram,Mr. Ingram,Elective,Male,J-Hall,I-Q
+jarvela,Mr. Jarvela,Elective,Male,A-Hall,I-Q
+jenifer,Mrs. Jenifer,Math,Female,D-Hall,I-Q
+jenkins,Mr. Jenkins,Elective,Male,H-Hall,I-Q
+langhorne,Mr. Langhorne,Science,Male,B-Hall,I-Q
+mack,Mrs. Mack,English,Female,B-Hall,I-Q
+marchesani,Mrs. Marchesani,Math,Female,D-Hall,I-Q
+mathis,Mr. Mathis,History,Male,F-Hall,I-Q
+mccord,Mr. McCord,Science,Male,J-Hall,I-Q
+mulin,Mrs. Mulin,Science,Female,M-Mall,I-Q
+palumbo,Mr. Palumbo,Elective,Male,B - Hall,I-Q
+paparo,Mrs. Paparo,English,Female,M-Hall,I-Q
+pino,Mr. Pino,English,Male,M-Hall,I-Q
+rifkin,Mrs. Rifkin,History,Female,F-Hall,R-Z
+montgomery,Mrs. Montgomery,History,Female,B-Hall,I-Q
+reily,Mrs. Rielly,Library,Female,Library,R-Z
+santamaria,Mrs. Santamaria,Elective,Female,B-Hall,R-Z
+shaw,Mrs. Shaw,English,Female,M-Hall,R-Z
+stowell,Mr. Stowell,Phys Ed,Male,GYM,R-Z
+tagmire,Mrs. Tagmire,Science,Female,J-Hall,R-Z
+verrecchio,Mrs. Verrecchio,English,Female,M-Hall,R-Z
+voss,Mr. Voss,Math,Male ,D-Hall,R-Z
+wallace,Mrs. Wallace,Phys Ed,Female,J-Hall,R-Z
+beard,Mr. Beard,Security,Male,NONE,A-H
+collins,Ms. Collins,Guidance,Female,J-Hall,A-H
+gorman,Mrs. Gorman,Guidance,Female,J-Hall,A-H
+hahn,Mrs. Hahn,History,Female,F-Hall,A-H
+smolark,Mr. Smolark,Math,Male,D-Hall,R-Z
+shaw2,Mr. Shaw,Elective,Male,M-Hall,R-Z

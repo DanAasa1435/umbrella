@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Vizulation - 30 Visual Puzzles, 6 Weeks, Mon-Fri, Mind Tweaks.">
+  <meta name="author" content="WTHSdle">
+  <link rel="icon" href="favicon.ico" type="image/ico">
+
+  <title>WTHSdle</title>
+  
+  <style> 
+  
+  html {
+  background: linear-gradient(to bottom, #26873a 50%, #00563a 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+ body {
+ background-color: white; 
+ }
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  #guess:disabled {
+  pointer-events: none; 
+  background-color: gray; 
+  opacity: 0.6; 
+  }
+
+  .top-header {
+  display: flex;
+  background-color: #26873a;
+  width: 100%;
+  padding: 5px 0;
+  align-items: center; 
+  justify-content: center; 
+  }
+  
+  .logo-size {
+  height: auto;
+  width: 350px; 
+  margin-top: -50px;
+  margin-bottom: -60px;
+  }
+  
+  .bottom-header { 
+  background-color: #00563a; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px 10px;
+  width: 100%;
+  }
+  
+  #attempts {
+  color: #26873a;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: bold;  
+  font-family: "Verdana", Times, serif;
+  }
+  
+  #guessForm {
+  gap: 30px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;   
+  }
+  
+  #teacher-select {
+  padding: 10px;
+  font-size: 15px;
+  font-style: bold;
+  min-width: 300px; 
+  }
+  
+  #guess {
+  background: #26873a; 
+  color: white; 
+  width: 90%; 
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px; 
+  border: none; 
+  cursor: pointer;
+  }
+  
+  #guess:hover {
+  background: #1f6f2f;
+  color: #e6e6e6;
+  }
+  
+  
+  #headers {
+  display: flex;
+  flex-direction: row; 
+  gap: 65px;
+  font-family: "Verdana", Times, serif;
+  margin-left: 135px;
+  margin-top: 70px; 
+  }
+  
+  #headers h3 {
+  width: 140px;          
+  text-align: center;
+  }
+  
+  #mainstuff {
+  display: flex;
+  flex-direction: row; 
+  margin-bottom: 25px;
+  }
+  
+  #images {
+  margin-left: 135px;
+  margin-top: 20px; 
+  display: flex;
+  flex-direction: row; 
+  gap: 65px; 
+  } 
+  
+  
+  #teacherName {
+  margin-top: 10px;
+  text-align: center; 
+  width: 100%;
+  font-family: "Verdana", Times, serif;
+  }
+  
+  #name {
+  background-color: #e5e7eb;
+  box-shadow: 5px 5px 25px #8a8a8a;
+  }
+  
+  #department {
+  background-color: #e5e7eb;
+ box-shadow: 5px 5px 25px #8a8a8a;
+  }
+  
+  #gender {
+  background-color: #e5e7eb;
+  box-shadow: 5px 5px 25px #8a8a8a;
+  }
+  
+  #hallway {
+  background-color: #e5e7eb;
+  box-shadow: 5px 5px 25px #8a8a8a;
+  }
+  
+  .attributes {
+  font-family: "Verdana", Times, serif;
+  border-radius: 5px;
+  width: 140px;        
+  height: 140px;
+  display: flex; 
+   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+  }
+  
+  footer {
+  background-color:  #00563a; 
+  padding: 50px;
+  }
+  
+  #infoSection {
+  display: flex;
+  flex-direction: column; 
+  }
+  
+  #imageName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin-left: 40px; 
+  margin-top: 10px;
+  
+  }
+  
+  #profile {
+  width: 320px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0; /* Prevents flexbox layout from shrinking the image box */
+}
+ 
+  option {
+  font-family: "Verdana", Times, serif;
+  font-weight: bold;
+  }
+  
+     @keyframes pop {
+0% { transform: scale(1); }
+50% { transform: scale(1.3); }
+100% { transform: scale(1); }
+}
+
+#attempts.winner {
+  animation: pop 0.4s ease-out;
+}
+
+  </style>  
+</head>
+
+<body>
+<header class="top-header">
+ <a href="wthsdle.html">
+  <img src="images/winslowlogoupdate.png" class="logo-size">
+   </a>
+</header>
+
+<header class="bottom-header">
+ <form id="guessForm">
+  <select id="teacher-select" name="teacher">
+
+  </select>
+   <button type="submit" id="guess" disabled>Guess</button>
+</form>
+</header>
+<div>
+<h4 id="attempts">Attempt: 1/5</h4>
+</div>
+
+<div id="mainstuff">
+  <div id="imageName">
+  <img src="images/femaleProfile.png" id="profile" class="imageSize">
+  <h1 id="teacherName">Teacher</h1>
+  </div>
+
+  <div id="infoSection">  
+  <div id="headers">
+   <h3>Department</h3>
+   <h3>Gender</h3>
+   <h3>Hallway</h3>
+   <h3>Last Name</h3>
+  </div>
+  <div id="images">
+  <h2 id="department" class="attributes">It's</h2>
+  <h2 id="gender" class="attributes">Quiet</h2>
+  <h2 id="hallway" class="attributes">For</h2>
+  <h2 id="name" class="attributes">Now...</h2> 
+  </div>
+  </div>
+</div>
+
+</body>
+<footer>
+<p></p>
+</footer>
+
+
+<script src="wthsdle.js"></script>
+
