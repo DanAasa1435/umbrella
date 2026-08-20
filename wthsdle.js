@@ -7,6 +7,10 @@ const teacherSelect = document.querySelector('#teacher-select');
 const guessForm = document.querySelector('#guessForm');
 const profile = document.querySelector('#profile');
 const attemptDisplay = document.querySelector('#attemptDisplay');
+const department = document.querySelector('#department');
+const gender = document.querySelector('#gender');
+const hallway = document.querySelector('#hallway');
+const name = document.querySelector('#name');
 let attempts = 1;
 const maxAttempts = 5;
 
@@ -51,12 +55,24 @@ if (attempts === 3 || attempts === 4) {
     profile.src = 'Images/femaleProfile.png';  
 }
 
+   department.textContent = guessedTeacher.department;
+
     
   if (attempts === 3 || attempts === 5) {
    displayAttempt.classList.add('winner');
    } else {
    displayAttempt.classList.remove('winner');
  }
+ 
+ const selectedId = teacherSelect.value;
+const guessedTeacher = teachers.find(t => t.id === selectedId);
+
+if (guessedTeacher) {
+  department.textContent = guessedTeacher.department;
+  gender.textContent = guessedTeacher.gender;
+  hallway.textContent = guessedTeacher.hallway;
+  name.textContent = guessedTeacher.name;
+}
 }
 
 function initGame() {
@@ -75,9 +91,6 @@ function initGame() {
         teacherSelect.appendChild(option); 		
 	});
 	
-	const selectedTeacher = teacherSelect.value; 
-	
-	const guessedTeacher = (teacher => teacher.id === selectedTeacher); 
 }
 
 
