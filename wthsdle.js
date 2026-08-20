@@ -50,9 +50,9 @@ if (attempts === 3 || attempts === 4) {
 	teacherName.textContent = selectedOption.text;
 	
 	if (selectedOption.text.includes('Mr.')) {
-    profile.src = 'images/maleProfile.jpg'; 
+    profile.src = 'Images/maleProfile.jpg'; 
    } else {
-    profile.src = 'images/femaleProfile.png';  
+    profile.src = 'Images/femaleProfile.png';  
 }
 
    department.textContent = guessedTeacher.department;
