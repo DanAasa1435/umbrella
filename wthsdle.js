@@ -10,7 +10,7 @@ const attemptDisplay = document.querySelector('#attemptDisplay');
 const department = document.querySelector('#department');
 const gender = document.querySelector('#gender');
 const hallway = document.querySelector('#hallway');
-const name = document.querySelector('#name');
+const lastName = document.querySelector('#lastName');
 let attempts = 1;
 const maxAttempts = 5;
 
@@ -71,7 +71,7 @@ if (guessedTeacher) {
   department.textContent = guessedTeacher.department;
   gender.textContent = guessedTeacher.gender;
   hallway.textContent = guessedTeacher.hallway;
-  name.textContent = guessedTeacher.lastName;
+  lastName.textContent = guessedTeacher.lastName;
 }
 }
 
