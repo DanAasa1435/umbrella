@@ -94,10 +94,8 @@ if (guessedTeacher) {
         select.element.classList.add('incorrect'); 
 	 }
  });
- 
-}
 
-	if (guessedTeacher === secrectTeacher) {
+	if (guessedTeacher.id === secrectTeacher.id) {
  setTimeout(() => {
     endGame(true);
   }, 2000);	//makes function after 2 seconds 
