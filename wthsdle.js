@@ -98,12 +98,15 @@ if (guessedTeacher) {
     return; 
   }
 	
-	if (attempts > maxAttempts) {
-		endGame(false);
-		return; //prevents attempts from continuing to count after 5.
-	} 	
+  // End game if they failed on attempt 5
+  if (attempts === maxAttempts) {
+    setTimeout(() => {
+      endGame(false);
+    }, 1000);
+    return;
+  } 	
 	
-	attempts++;
+  attempts++;
 }
 
 
