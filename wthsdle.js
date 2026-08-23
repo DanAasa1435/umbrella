@@ -1,5 +1,5 @@
 let teachers = [];
-let secrectTeacher = null; 
+let secretTeacher = null; 
 const guess = document.querySelector('#guess');
 const displayAttempt = document.querySelector('#attempts');
 const teacherName = document.querySelector('#teacherName');
@@ -36,9 +36,17 @@ teacherSelect.addEventListener('change', () => {
 
 function addAttempt(event) {
 	event.preventDefault();
+
+	if (guessedTeacher === secrectTeacher) {
+ setTimeout(() => {
+    endGame(true);
+  }, 2000);	//makes function after 2 seconds 
+  return; 
+}
+}
 	
 	if (attempts >= maxAttempts) {
-		endGame();
+		endGame(false);
 	} else {	
 	attempts++;
 	displayAttempt.textContent = `Attempt: ${attempts}/${maxAttempts}`;
@@ -59,8 +67,6 @@ if (attempts === 3 || attempts === 4) {
     profile.src = 'Images/femaleProfile.png';  
 }
 
-
-
     
   if (attempts === 3 || attempts === 5) {
    displayAttempt.classList.add('winner');
@@ -78,12 +84,7 @@ if (guessedTeacher) {
   lastName.textContent = guessedTeacher.lastName;
 }
 
-if (guessedTeacher === secrectTeacher) {
- setTimeout(() => {
-    endGame(isWin);
-  }, 3000);	//makes function after 3 seconds 
-}
-}
+
 
 function endGame(isWin) {
 	guess.disabled = true;

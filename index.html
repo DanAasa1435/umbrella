@@ -204,8 +204,19 @@
  }
 
  .result {
+ position: fixed; 
+ display: flex;
+ align-items: center; 	
+ justify-content: center;   
  background-color: white;
  border-radius: 5px;
+ flex-direction: column; 
+ transform: translate(-50%, -50%); /* shifts the box from the top lef to ensure it stays center  */
+ padding: 60px; /* padding can cause something to get so big and lose text*/ 
+ top: 50%;
+ left: 50%;
+ font-family: "Verdana", Times, serif;
+ box-shadow: 5px 5px 25px #8a8a8a;
  }
  
   option {
