@@ -408,14 +408,6 @@
     "lastName": "R-Z"
   },
   {
-    "id": "beard",
-    "name": "Mr. Beard",
-    "department": "Security",
-    "gender": "Male",
-    "hallway": "NONE",
-    "lastName": "A-H"
-  },
-  {
     "id": "collins",
     "name": "Ms. Collins",
     "department": "Guidance",
