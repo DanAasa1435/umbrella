@@ -1,5 +1,5 @@
 let teachers = [];
-let secretTeacher = null; 
+let secrectTeacher = null; 
 const guess = document.querySelector('#guess');
 const displayAttempt = document.querySelector('#attempts');
 const teacherName = document.querySelector('#teacherName');
@@ -86,8 +86,8 @@ if (guessedTeacher) {
 
 }
  const coloredBoxes = [
- { element: department, guessed: guessedTeacher.guessed, secrect: secrectTeacher.department },
- { element: gender, guessed: guessedTeacher.guessed, secrect: secrectTeacher.guessed },
+ { element: department, guessed: guessedTeacher.department, secrect: secrectTeacher.department },
+ { element: gender, guessed: guessedTeacher.gender, secrect: secrectTeacher.gender },
  { element: hallway, guessed: guessedTeacher.hallway, secrect: secrectTeacher.hallway },
  { element: lastName, guessed: guessedTeacher.lastName, secrect: secrectTeacher.lastName}
 ]	 
@@ -100,9 +100,10 @@ if (guessedTeacher) {
 		 select.element.classList.remove('correct');
         select.element.classList.add('incorrect'); 
 	 }
- }
-
+ });
+ 
 }
+
 
 function endGame(isWin) {
 	guess.disabled = true;
@@ -116,7 +117,7 @@ function endGame(isWin) {
 	  loserInfo.textContent = `The teacher was ${secrectTeacher.name}!`;
       loserScreen.classList.remove('hidden');	  
 	}
-});
+}
 
 function initGame() {
 	teacherSelect.innerHTML = '<option value="" disabled selected>Select a Teacher...</option>';
