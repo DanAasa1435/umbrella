@@ -40,7 +40,7 @@ function addAttempt(event) {
 
 	
 	
-	
+	displayAttempt.textContent = `Attempt: ${attempts}/${maxAttempts}`;
 if (attempts === 3 || attempts === 4) {
 		displayAttempt.style.color = '#A29C07';
 	} else if (attempts === 5) {
@@ -93,16 +93,16 @@ if (guessedTeacher) {
 	if (guessedTeacher.id === secrectTeacher.id) {
  setTimeout(() => {
     endGame(true);
-  }, 2000);	//makes function after 2 seconds 
+  }, 1000);	//makes function after 2 seconds 
   return; 
 	}
 	
 	if (attempts >= maxAttempts) {
 		endGame(false);
-	} else {	
+	} 	
+	
+	
 	attempts++;
-	displayAttempt.textContent = `Attempt: ${attempts}/${maxAttempts}`;
-	}
 }
 
 
