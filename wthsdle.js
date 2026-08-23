@@ -116,7 +116,7 @@ function endGame(isWin) {
 	  loserInfo.textContent = `The teacher was ${secrectTeacher.name}!`;
       loserScreen.classList.remove('hidden');	  
 	}
-}
+});
 
 function initGame() {
 	teacherSelect.innerHTML = '<option value="" disabled selected>Select a Teacher...</option>';
