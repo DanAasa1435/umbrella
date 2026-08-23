@@ -98,7 +98,7 @@ if (guessedTeacher) {
     return; 
   }
 	
-	if (attempts >= maxAttempts) {
+	if (attempts > maxAttempts) {
 		endGame(false);
 		return; //prevents attempts from continuing to count after 5.
 	} 	
