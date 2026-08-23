@@ -37,13 +37,7 @@ teacherSelect.addEventListener('change', () => {
 function addAttempt(event) {
 	event.preventDefault();
 
-	if (guessedTeacher === secrectTeacher) {
- setTimeout(() => {
-    endGame(true);
-  }, 2000);	//makes function after 2 seconds 
-  return; 
-}
-}
+
 	
 	if (attempts >= maxAttempts) {
 		endGame(false);
@@ -84,6 +78,13 @@ if (guessedTeacher) {
   lastName.textContent = guessedTeacher.lastName;
 }
 
+	if (guessedTeacher === secrectTeacher) {
+ setTimeout(() => {
+    endGame(true);
+  }, 2000);	//makes function after 2 seconds 
+  return; 
+
+}
 
 
 function endGame(isWin) {
