@@ -39,12 +39,7 @@ function addAttempt(event) {
 
 
 	
-	if (attempts >= maxAttempts) {
-		endGame(false);
-	} else {	
-	attempts++;
-	displayAttempt.textContent = `Attempt: ${attempts}/${maxAttempts}`;
-	}
+	
 	
 if (attempts === 3 || attempts === 4) {
 		displayAttempt.style.color = '#A29C07';
@@ -100,6 +95,13 @@ if (guessedTeacher) {
     endGame(true);
   }, 2000);	//makes function after 2 seconds 
   return; 
+	}
+	
+	if (attempts >= maxAttempts) {
+		endGame(false);
+	} else {	
+	attempts++;
+	displayAttempt.textContent = `Attempt: ${attempts}/${maxAttempts}`;
 	}
 }
 
