@@ -15,7 +15,7 @@ const winnerInfo = document.querySelector('#winnerInfo');
 const winnerScreen = document.querySelector('#winnerScreen');
 const loserInfo = document.querySelector('#loserInfo');
 const loserScreen = document.querySelector('#loserScreen');
-let attempts = 0;
+let attempts = 1;
 const maxAttempts = 5;
 
 fetch('teachers.json')
@@ -87,21 +87,21 @@ if (guessedTeacher) {
 	 }
  });
 
-  // OPTION 1: Returns true if EVERY attribute box matches green
+  // Returns true if EVERY attribute box matches green
   const isAllAttributesMatch = coloredBoxes.every(box => box.guessed === box.secrect);
 
-  // Wins if either the exact teacher is guessed OR all 4 attributes match!
+  // CHANGE: Pass guessedTeacher into endGame when winning
   if (guessedTeacher.id === secrectTeacher.id || isAllAttributesMatch) {
     setTimeout(() => {
-      endGame(true);
+      endGame(true, guessedTeacher);
     }, 1000); 
     return; 
   }
 	
-  // End game if they failed on attempt 5
+  // CHANGE: Pass guessedTeacher into endGame when losing
   if (attempts === maxAttempts) {
     setTimeout(() => {
-      endGame(false);
+      endGame(false, guessedTeacher);
     }, 1000);
     return;
   } 	
@@ -110,14 +110,19 @@ if (guessedTeacher) {
 }
 
 
-
-function endGame(isWin) {
+// CHANGE: Updated endGame to take guessedTeacher as a second parameter
+function endGame(isWin, guessedTeacher) {
 	guess.disabled = true;
 	teacherSelect.disabled = true;
 	
 	if (isWin) {
-	 winnerInfo.textContent = `The person was ${secrectTeacher.name}!`;
-	winnerScreen.classList.remove('hidden');
+	  // CHANGE: If all 4 attributes match but it's a twin/alternate teacher, display the guessed teacher's name!
+	  if (guessedTeacher && guessedTeacher.id !== secrectTeacher.id) {
+	    winnerInfo.textContent = `The mystery teacher was ${guessedTeacher.name}!`;
+	  } else {
+	    winnerInfo.textContent = `The person was ${secrectTeacher.name}!`;
+	  }
+	  winnerScreen.classList.remove('hidden');
 	
 	} else {
 	  loserInfo.textContent = `The person was ${secrectTeacher.name}!`;
