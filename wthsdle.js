@@ -85,6 +85,23 @@ if (guessedTeacher) {
   return; 
 
 }
+ const coloredBoxes = [
+ { element: department, guessed: guessedTeacher.guessed, secrect: secrectTeacher.department },
+ { element: gender, guessed: guessedTeacher.guessed, secrect: secrectTeacher.guessed },
+ { element: hallway, guessed: guessedTeacher.hallway, secrect: secrectTeacher.hallway },
+ { element: lastName, guessed: guessedTeacher.lastName, secrect: secrectTeacher.lastName}
+]	 
+
+ coloredBoxes.forEach(select => {
+	 if (select.guessed === select.secrect) {
+		select.element.classList.add('correct');
+        select.element.classList.remove('incorrect'); 
+	 } else {
+		 select.element.classList.remove('correct');
+        select.element.classList.add('incorrect'); 
+	 }
+	 
+
 }
 
 function endGame(isWin) {
