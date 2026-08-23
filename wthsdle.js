@@ -11,6 +11,10 @@ const department = document.querySelector('#department');
 const gender = document.querySelector('#gender');
 const hallway = document.querySelector('#hallway');
 const lastName = document.querySelector('#lastName');
+const winnerInfo = document.querySelector('#winnerInfo');
+const winnerScreen = document.querySelector('#winnerScreen');
+const loserInfo = document.querySelector('#loserInfo');
+const loserScreen = document.querySelector('#loserScreen');
 let attempts = 1;
 const maxAttempts = 5;
 
@@ -73,6 +77,26 @@ if (guessedTeacher) {
   hallway.textContent = guessedTeacher.hallway;
   lastName.textContent = guessedTeacher.lastName;
 }
+
+if (guessedTeacher === secrectTeacher) {
+ setTimeout(() => {
+    endGame(isWin);
+  }, 3000);	//makes function after 3 seconds 
+}
+}
+
+function endGame(isWin) {
+	guess.disabled = true;
+	teacherSelect.disabled = true;
+	
+	if (isWin) {
+	 winnerInfo.textContent = `The teacher was ${secrectTeacher.name}!`;
+	winnerScreen.classList.remove('hidden');
+	
+	} else {
+	  loserInfo.textContent = `The teacher was ${secrectTeacher.name}!`;
+      loserScreen.classList.remove('hidden');	  
+	}
 }
 
 function initGame() {
@@ -90,6 +114,10 @@ function initGame() {
 
         teacherSelect.appendChild(option); 		
 	});
+	
+	const randomTeacher = Math.floor(Math.random() * teachers.length);
+	secrectTeacher = teachers[randomTeacher];
+	
 	
 }
 

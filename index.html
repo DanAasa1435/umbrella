@@ -164,7 +164,6 @@
   height: 140px;
   display: flex; 
    
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -200,7 +199,14 @@
   flex-shrink: 0; /* Prevents flexbox layout from shrinking the image box */
 }
 
+ .hidden {
+ /*display: none !important;*/
+ }
 
+ .result {
+ background-color: white;
+ border-radius: 5px;
+ }
  
   option {
   font-family: "Verdana", Times, serif;
@@ -238,6 +244,16 @@
 <div>
 <h4 id="attempts">Attempt: 1/5</h4>
 </div>
+
+<div id ="winnerScreen" class="result hidden">
+  <h3> You Did It! </h3>
+  <h5 id="winnerInfo"></h5>
+  </div>
+  
+  <div id="loserScreen" class="result hidden">
+  <h3> Better Luck Next Time! </h3> 
+  <h5 id="loserInfo"></h5>
+  </div>
 
 <div id="mainstuff">
   <div id="imageName">
