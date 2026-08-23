@@ -100,7 +100,7 @@ if (guessedTeacher) {
     endGame(true);
   }, 2000);	//makes function after 2 seconds 
   return; 
-
+	}
 }
 
 
