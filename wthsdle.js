@@ -85,7 +85,7 @@ if (guessedTeacher) {
   return; 
 
 }
-
+}
 
 function endGame(isWin) {
 	guess.disabled = true;
