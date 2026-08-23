@@ -100,7 +100,7 @@ if (guessedTeacher) {
 		 select.element.classList.remove('correct');
         select.element.classList.add('incorrect'); 
 	 }
-	 
+ }
 
 }
 
