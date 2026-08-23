@@ -101,7 +101,7 @@ if (guessedTeacher) {
   }, 2000);	//makes function after 2 seconds 
   return; 
 	}
-}
+}}
 
 
 
