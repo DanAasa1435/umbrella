@@ -37,11 +37,8 @@ teacherSelect.addEventListener('change', () => {
 function addAttempt(event) {
 	event.preventDefault();
 
-
-	
-	
 	displayAttempt.textContent = `Attempt: ${attempts}/${maxAttempts}`;
-if (attempts === 3 || attempts === 4) {
+	if (attempts === 3 || attempts === 4) {
 		displayAttempt.style.color = '#A29C07';
 	} else if (attempts === 5) {
 		displayAttempt.style.color = '#B51C1C';
@@ -90,17 +87,21 @@ if (guessedTeacher) {
 	 }
  });
 
-	if (guessedTeacher.id === secrectTeacher.id) {
- setTimeout(() => {
-    endGame(true);
-  }, 1000);	//makes function after 2 seconds 
-  return; 
-	}
+  // OPTION 1: Returns true if EVERY attribute box matches green
+  const isAllAttributesMatch = coloredBoxes.every(box => box.guessed === box.secrect);
+
+  // Wins if either the exact teacher is guessed OR all 4 attributes match!
+  if (guessedTeacher.id === secrectTeacher.id || isAllAttributesMatch) {
+    setTimeout(() => {
+      endGame(true);
+    }, 1000); 
+    return; 
+  }
 	
 	if (attempts >= maxAttempts) {
 		endGame(false);
+		return; //prevents attempts from continuing to count after 5.
 	} 	
-	
 	
 	attempts++;
 }
@@ -144,6 +145,4 @@ function initGame() {
 }
 
 
- guessForm.addEventListener('submit', addAttempt); 
- 
- 
+ guessForm.addEventListener('submit', addAttempt);
