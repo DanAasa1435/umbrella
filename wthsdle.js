@@ -78,13 +78,6 @@ if (guessedTeacher) {
   lastName.textContent = guessedTeacher.lastName;
 }
 
-	if (guessedTeacher === secrectTeacher) {
- setTimeout(() => {
-    endGame(true);
-  }, 2000);	//makes function after 2 seconds 
-  return; 
-
-}
  const coloredBoxes = [
  { element: department, guessed: guessedTeacher.department, secrect: secrectTeacher.department },
  { element: gender, guessed: guessedTeacher.gender, secrect: secrectTeacher.gender },
@@ -104,17 +97,26 @@ if (guessedTeacher) {
  
 }
 
+	if (guessedTeacher === secrectTeacher) {
+ setTimeout(() => {
+    endGame(true);
+  }, 2000);	//makes function after 2 seconds 
+  return; 
+
+}
+
+
 
 function endGame(isWin) {
 	guess.disabled = true;
 	teacherSelect.disabled = true;
 	
 	if (isWin) {
-	 winnerInfo.textContent = `The teacher was ${secrectTeacher.name}!`;
+	 winnerInfo.textContent = `The person was ${secrectTeacher.name}!`;
 	winnerScreen.classList.remove('hidden');
 	
 	} else {
-	  loserInfo.textContent = `The teacher was ${secrectTeacher.name}!`;
+	  loserInfo.textContent = `The person was ${secrectTeacher.name}!`;
       loserScreen.classList.remove('hidden');	  
 	}
 }
