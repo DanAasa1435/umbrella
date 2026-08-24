@@ -15,7 +15,7 @@ const winnerInfo = document.querySelector('#winnerInfo');
 const winnerScreen = document.querySelector('#winnerScreen');
 const loserInfo = document.querySelector('#loserInfo');
 const loserScreen = document.querySelector('#loserScreen');
-let attempts = 0;
+let attempts = 1;
 const maxAttempts = 5;
 
 fetch('teachers.json')
@@ -78,11 +78,13 @@ if (guessedTeacher) {
 ]	 
 
  coloredBoxes.forEach(select => {
+	 select.element.classList.remove('correct', 'incorrect');
+	 
+	 void select.element.offsetWidth;
+	 
 	 if (select.guessed === select.secrect) {
 		select.element.classList.add('correct');
-        select.element.classList.remove('incorrect'); 
 	 } else {
-		 select.element.classList.remove('correct');
         select.element.classList.add('incorrect'); 
 	 }
  });
@@ -98,7 +100,6 @@ if (guessedTeacher) {
     return; 
   }
 	
-  // CHANGE: Pass guessedTeacher into endGame when losing
   if (attempts === maxAttempts) {
     setTimeout(() => {
       endGame(false, guessedTeacher);
