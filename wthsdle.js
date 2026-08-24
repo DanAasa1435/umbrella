@@ -15,7 +15,7 @@ const winnerInfo = document.querySelector('#winnerInfo');
 const winnerScreen = document.querySelector('#winnerScreen');
 const loserInfo = document.querySelector('#loserInfo');
 const loserScreen = document.querySelector('#loserScreen');
-let attempts = 1;
+let attempts = 0;
 const maxAttempts = 5;
 
 fetch('teachers.json')
