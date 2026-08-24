@@ -131,6 +131,7 @@ function endGame(isWin, guessedTeacher) {
 }
 
 function initGame() {
+	displayAttempt.textContent = `Attempt: ${attempts}/${maxAttempts}`;
 	teacherSelect.innerHTML = '<option value="" disabled selected>Select a Teacher...</option>';
 	
 	teachers.sort((a,b) => {
