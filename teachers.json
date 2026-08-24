@@ -95,6 +95,14 @@
     "hallway": "NONE",
     "lastName": "A-H"
   },
+    {
+    "id": "beard",
+    "name": "Mr. Beard",
+    "department": "Security",
+    "gender": "Male",
+    "hallway": "NONE",
+    "lastName": "A-H"
+  },
   {
     "id": "bobo",
     "name": "Mr. Bobo",
