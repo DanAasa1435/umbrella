@@ -118,7 +118,7 @@ function endGame(isWin, guessedTeacher) {
 	if (isWin) {
 	  // CHANGE: If all 4 attributes match but it's a twin/alternate teacher, display the guessed teacher's name!
 	  if (guessedTeacher && guessedTeacher.id !== secrectTeacher.id) {
-	    winnerInfo.textContent = `The mystery person was ${guessedTeacher.name}!`;
+	    winnerInfo.textContent = `The mystery teacher was ${guessedTeacher.name}!`;
 	  } else {
 	    winnerInfo.textContent = `The person was ${secrectTeacher.name}!`;
 	  }
@@ -131,7 +131,6 @@ function endGame(isWin, guessedTeacher) {
 }
 
 function initGame() {
-	displayAttempt.textContent = `Attempt: ${attempts}/${maxAttempts}`;
 	teacherSelect.innerHTML = '<option value="" disabled selected>Select a Teacher...</option>';
 	
 	teachers.sort((a,b) => {
