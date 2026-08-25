@@ -170,6 +170,8 @@
   text-align: center;
   line-height: 1;
   transition: background-color 0.5s ease;
+  position: relative /* allows z-index to be activated here */ 
+  z-index: 1; 
   }
   
   footer {
@@ -219,6 +221,7 @@
  left: 50%;
  font-family: "Verdana", Times, serif;
  box-shadow: 5px 5px 25px #8a8a8a;
+ z-index: 9999 !important;
  }
  
  .correct {
@@ -259,14 +262,6 @@
   animation: zoomIn 0.4s ease-out forwards;
 }
 
-#winnerScreen {
-z-index: 1000; 
-}
-
-#loserScreen {
-z-index: 1000;
-
-}
 
   </style>  
 </head>
