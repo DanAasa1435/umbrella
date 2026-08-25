@@ -219,7 +219,6 @@
  left: 50%;
  font-family: "Verdana", Times, serif;
  box-shadow: 5px 5px 25px #8a8a8a;
- z-index: 1000; /* stacks the result in front of the others */
  }
  
  .correct {
@@ -260,7 +259,14 @@
   animation: zoomIn 0.4s ease-out forwards;
 }
 
+#winnerScreen {
+z-index: 1000; 
+}
 
+#loserScreen {
+z-index: 1000;
+
+}
 
   </style>  
 </head>
