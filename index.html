@@ -219,6 +219,7 @@
  left: 50%;
  font-family: "Verdana", Times, serif;
  box-shadow: 5px 5px 25px #8a8a8a;
+ z-index: 1000; /* stacks the result in front of the others */
  }
  
  .correct {
@@ -246,11 +247,11 @@
 
 @keyframes zoomIn {
   0% {
-    transform: scale(0);
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
 }
