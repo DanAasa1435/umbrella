@@ -124,11 +124,13 @@ function endGame(isWin, guessedTeacher) {
 	    winnerInfo.textContent = `The person was ${secrectTeacher.name}!`;
 	  }
 	  winnerScreen.classList.remove('hidden');
+	  void winnerScreen.offsetWidth;
 	  winnerScreen.classList.add('zoom-animation');
 	
 	} else {
 	  loserInfo.textContent = `The person was ${secrectTeacher.name}!`;
       loserScreen.classList.remove('hidden');
+	  void loserScreen.offsetWidth; //acknowledges loserscreen so it can play animation
 	  loserScreen.classList.add('zoom-animation');
 	  
 	}
