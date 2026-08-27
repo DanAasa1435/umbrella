@@ -119,6 +119,7 @@
   display: flex;
   flex-direction: row; 
   margin-bottom: 25px;
+  z-index: 0;
   }
   
   #images {
@@ -171,7 +172,7 @@
   line-height: 1;
   transition: background-color 0.5s ease;
   position: relative; /* allows z-index to be activated here */ 
-  z-index: 1; 
+  z-index: 0; 
   }
   
   footer {
@@ -216,8 +217,9 @@
  border-radius: 5px;
  flex-direction: column; 
  padding: 60px; /* padding can cause something to get so big and lose text*/ 
- top: 50%;
- left: 50%;
+ top: 50vh;
+ left: 50vw;
+ isolation: isolate;
  font-family: "Verdana", Times, serif;
  box-shadow: 5px 5px 25px #8a8a8a;
  z-index: 9999 !important;
